@@ -1,0 +1,5 @@
+CREATE DATABASE wordpress_db DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+CREATE USER 'web01'@'localhost' IDENTIFIED BY 'Clave123';
+GRANT ALL PRIVILEGES ON wordpress_db.* TO 'web01'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
